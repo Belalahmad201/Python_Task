@@ -1,0 +1,51 @@
+Explanation of Move Zeroes Problem
+
+Goal:
+Move all zero values to the end of the array without changing the order of non-zero elements.
+
+Technique Used:
+Two Pointers
+
+Pointers:
+i -> Traverses the array
+j -> Stores position for next non-zero element
+
+Working:
+
+Initial Array:
+[0, 1, 0, 3, 12]
+
+Step 1:
+i = 0
+Value = 0
+Skip
+
+Step 2:
+i = 1
+Value = 1
+Swap nums[i] with nums[j]
+
+Array:
+[1, 0, 0, 3, 12]
+
+Step 3:
+i = 3
+Value = 3
+Swap with nums[j]
+
+Array:
+[1, 3, 0, 0, 12]
+
+Step 4:
+i = 4
+Value = 12
+Swap with nums[j]
+
+Final Array:
+[1, 3, 12, 0, 0]
+
+Conclusion:
+This approach is efficient because it uses:
+- Single traversal
+- No extra memory
+- In-place modification
